@@ -1,38 +1,5 @@
 Id CommandLine                                                               
-  -- -----------                                                               
-   1 Get-L$ocation                                                             
-   2 Get-Location                                                              
-   3 Get-Host                                                                  
-   4 Set-Loctation -Path C:\                                                   
-   5 Set-Loctation -Path C:\                                                   
-   6 Get-Location                                                              
-   7 Set-Location -Path C:\                                                    
-   8 Get-Location                                                              
-   9 New-Item -Path Temp -ItemType Directory                                   
-  10 Set-Location Temp                                                         
-  11 New-Item -Path Rep1 -ItemType Directory                                   
-  12 New-Item -Path Rep2 -ItemType Directory                                   
-  13 Set-Location C:\Temp                                                      
-  14 Get-ChildItem                                                             
-  15 New-Item -Path file1 -ItemType fils                                       
-  16 New-Item -Path file1 -ItemType file                                       
-  17 New-Item -Path file2 -ItemType file                                       
-  18 New-Item -Path file3 -ItemType file                                       
-  19 Get-ChildItem                                                             
-  20 Move-Item -Path file1 -Destination Rep1                                   
-  21 Get-ChildItem                                                             
-  22 Get-ChildItem -Path Rep1                                                  
-  23 Get-ChildItem -Recurse                                                    
-  24 Move-Item -Path Rep1 -Destination Rep2                                    
-  25 Get-ChildItem -Recurse                                                    
-  26 Remove-Item -Path file3                                                   
-  27 Get-ChildItem -Recurse                                                    
-  28 Remove-Item Rep2 -Recurse                                                 
-  29 Get-ChildItem -Recurse                                                    
-  30 Set-Location -Path C:\...                                                 
-  31 Set-Location -Path C:\...                                                 
-  32 Get-ChildItem -Recurse                                                    
-  33 Get-ChildItem -Recurse                                                    
+  -- -----------                                                                                                               
   34 Get-ChildItem                                                             
   35 Move-Item -Path file2 -Destination C:\EvenFolder...                       
   36 Get-ChildItem FolderTest1                                                 
@@ -47,5 +14,17 @@ Id CommandLine
   45 Copy-Item -Path C:\FolderTest1\file1 -Destination C:\OddFolder...         
   46 Get-ChildItem OddFolder                                                   
   47 Copy-Item -Path C:\FolderTest2\file7 -Destination C:\OddFolder...         
-  48 Get-ChildItem OddFolder                                                   
-  49 Get-History > historique.txt                                              
+  48 Get-ChildItem OddFolder 
+  49 Remove-Item -Path C:\FolderTest1\file1
+  50 Remove-Item -Path C:\FolderTest1\file2
+  51 Remove-Item -Path C:\FolderTest1\file3
+  52 Remove-Item -Path C:\FolderTest1\file4
+  53 Remove-Item -Path C:\FolderTest1\file5
+  54 Get-ChildItem -Path Foldertest1
+  55 Remove-Item -Path C:\FolderTest2\file6
+  56 Remove-Item -Path C:\FolderTest2\file7
+  57 Remove-Item -Path C:\FolderTest2\file8
+  58 Remove-Item -Path C:\FolderTest2\file9
+  59 Remove-Item -Path C:\FolderTest2\file10
+  60 Get-ChildItem -Path Foldertest2
+  61 Get-History > historique.txt                                              
